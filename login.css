@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0559F7;
+  font-family:Arial, Helvetica, sans-serif !important;
+}
+
+.container{
+  width: 40%;
+  position: absolute;
+  align-items: center;
+  justify-items: center;
+  margin-top: 6%;
+}
+
+#principal{
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  width: 40%;
+  max-width: 40%;
+  height: 500px;
+  margin: auto;
+  margin-top: 40px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.555);
+}
+
+#principal > h4 {
+  margin-top: 6%;
+}
+
+a {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+
+h4 {
+  padding: 0;
+  margin:0;
+  margin-bottom: 10px;
+}
+
+#esqueceu {
+  margin-top: 8px;
+}
+
+#senha {
+  margin-top: 15px
+}
+
+#outros-login a{
+  color: black
+}
+
+#outros-login h5 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+/* =ICONES= */
+ion-icon {
+  font-size: 32px;
+}
+
+.icons {
+  margin-right: 5px;
+}
+
+/*
+ion-icon:active {
+  color: rgb(13, 13, 136);
+}
+*/
+
+#logo-google:active {
+  color:#db4a39;
+}
+
+#logo-twitter:active {
+  color: #00acee;
+}
+
+#logo-facebook:active {
+  color: #3b5998;
+}
+/* =FIM ICONES= */
+
+/*BOTAO LOGIN*/
+#entrar-button {
+  background-color: #0559F7;
+  border: none;
+  width: 100px;
+  height: 30px;
+  box-shadow: 5px 5px 10px rgba(78, 78, 78, 0.555);
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#entrar-button:active {
+  background-color: #071AE0;
+  border: none;
+  width: 100px;
+  height: 30px;
+  box-shadow: 5px 5px 10px rgba(78, 78, 78, 0.555);
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  cursor: pointer;
+}
+/*FIM BOTAO LOGIN*/
+
+
+input[type=email]{
+  text-decoration: none;
+  border: 1px solid grey;
+  border-radius: 4px;
+  width: 75%;
+  height: 32px;
+  outline: none;
+  padding: 0px 0px 0px 10px;
+}
+input[type=password]{
+  text-decoration: none;
+  border: 1px solid grey;
+  border-radius: 4px;
+  width: 75%;
+  height: 32px;
+  outline: none;
+  padding: 0px 0px 0px 10px;
+}
+
+/*RODAPE*/
+footer a {
+  text-decoration: none;
+  color: #F7AB05;
+}
+
+footer > p {
+  color: white;
+}
+
+footer {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+/*FIM RODAPE*/

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGIN</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body onload="onload()">
+
+  <section>
+        
+
+    <div id="principal">
+      <h1 id="login">ENTRAR</h1>
+
+
+      <div class="container">
+        <h4>Email</h4>
+        <form action method="post">
+          <input type="email" name="email" placeholder="email@example.com" id="emailtxt" required>
+          <h4 id="senha">Senha</h4>
+          <input type="password" name="senha" placeholder="Senha..." id="senhatxt">
+          <p id="esqueceu"><a href="#">Esqueceu a senha?</a></p>
+          <button id="entrar-button">ENTRAR</button>
+            <div id="outros-login">
+              <h5>Ou faça login usando:</h5>
+                <a href="#" class="icons">
+                  <ion-icon  name="logo-google" id="logo-google"></ion-icon>
+                </a>
+              <a href="#" class="icons">
+                <ion-icon name="logo-twitter" id="logo-twitter"></ion-icon>
+              </a>
+              <a href="#" class="icons">
+                <ion-icon name="logo-facebook" id="logo-facebook"></ion-icon>
+              </a>
+            </div>
+              </div>
+        </form>
+      </div>
+
+
+  </section>
+
+  <footer>
+    <p>Coded By <a href="https://github.com/Cauanz">Cauanz</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <script>
+    function onload() {
+      document.getElementById("emailtxt").focus()
+    }
+  </script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
