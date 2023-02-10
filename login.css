@@ -78,17 +78,17 @@ ion-icon:active {
 
 #logo-google:hover {
   color:#db4a39;
-  transition-duration: 1s;
+  transition-duration: 0.2s;
 }
 
 #logo-twitter:hover {
   color: #00acee;
-  transition-duration: 1s;
+  transition-duration: 0.2s;
 }
 
 #logo-facebook:hover {
   color: #3b5998;
-  transition-duration: 1s;
+  transition-duration: 0.2s;
 }
 /* =FIM ICONES= */
 
