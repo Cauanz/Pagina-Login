@@ -7,28 +7,28 @@
   <title>LOGIN</title>
   <link rel="stylesheet" href="login.css">
 </head>
-<body onload="onload()">
+<body>
 
         
 
     <div id="principal">
+      
       <h1 id="login">ENTRAR</h1>
 
-
       <div class="container">
-        
-        <h4>Email</h4>
 
-        <form action="#" method="post">
+        <form>
 
+          <label for="emailtxt">Email</label>
           <input type="email" name="email" placeholder="email@example.com" id="emailtxt" required>
-          <h4 id="senha">Senha</h4>
+
+          <label for="senhatxt" id="senhalabel">Senha</label>
           <input type="password" name="senha" placeholder="Senha..." id="senhatxt" required>
 
           <p id="esqueceu">
             <a href="#">Esqueceu a senha?</a>
           </p>
-          <button id="entrar-button">ENTRAR</button>
+          <button type="submit" onclick="login()" id="entrar-button">ENTRAR</button>
 
             <div id="outros-login">
               
