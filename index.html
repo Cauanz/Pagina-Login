@@ -8,45 +8,50 @@
   <link rel="stylesheet" href="login.css">
 </head>
 <body>
+  
+  <div class="themeButton">
+    <button class="themeToggle">
+      <ion-icon name="sunny-outline"></ion-icon>
+    </button>
+  </div>
 
-        
+  <main id="principal">
+    
+    <h1 id="login">login</h1>
 
-    <div id="principal">
-      
-      <h1 id="login">ENTRAR</h1>
+    <div class="container">
 
-      <div class="container">
+      <form>
 
-        <form>
+        <label for="emailtxt">Email</label>
+        <input type="email" name="email" placeholder="email@example.com" id="emailtxt" required>
 
-          <label for="emailtxt">Email</label>
-          <input type="email" name="email" placeholder="email@example.com" id="emailtxt" required>
+        <label for="senhatxt" id="senhalabel">Senha</label>
+        <input type="password" name="senha" placeholder="Senha..." id="senhatxt" required>
 
-          <label for="senhatxt" id="senhalabel">Senha</label>
-          <input type="password" name="senha" placeholder="Senha..." id="senhatxt" required>
+        <p id="esqueceu">
+          <a href="#">Esqueceu a senha?</a>
+        </p>
+        <button type="submit" onclick="" id="entrar-button">ENTRAR</button>
 
-          <p id="esqueceu">
-            <a href="#">Esqueceu a senha?</a>
-          </p>
-          <button type="submit" onclick="login()" id="entrar-button">ENTRAR</button>
+          <div id="outros-login">
+            
+            <h5>Ou faça login usando:</h5>
 
-            <div id="outros-login">
-              
-              <h5>Ou faça login usando:</h5>
-
-                <a href="#" class="icons">
-                  <ion-icon  name="logo-google" id="logo-google"></ion-icon>
-                </a>
-              <a href="#" class="icons">
-                <ion-icon name="logo-twitter" id="logo-twitter"></ion-icon>
+              <a href="#" class="icons" id="google-logo">
+                <ion-icon  name="logo-google" id="logo-google"></ion-icon>
               </a>
-              <a href="#" class="icons">
-                <ion-icon name="logo-facebook" id="logo-facebook"></ion-icon>
-              </a>
-            </div>
-              </div>
-        </form>
-      </div>
+            <a href="#" class="icons" id="twitter-logo">
+              <ion-icon name="logo-twitter" id="logo-twitter"></ion-icon>
+            </a>
+            <a href="#" class="icons" id="facebook-logo">
+              <ion-icon name="logo-facebook" id="logo-facebook"></ion-icon>
+            </a>
+          </div>
+      </form>
+    </div>
+    </main>
+
 
 
 
@@ -56,6 +61,7 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="login.js"></script>
 
   <script>
     function onload() {

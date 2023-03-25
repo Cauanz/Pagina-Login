@@ -1,13 +1,24 @@
-localStorage.setItem("username", "fulano");
-localStorage.setItem("password", "senha123");
+const buttonToggle = document.querySelector('.themeToggle');
+const icon = document.querySelector('ion-icon');
+const button = document.querySelector('#entrar-button');
+const footer = document.querySelector('footer');
+const container = document.querySelector('#principal');
+
+const googleLogo = document.getElementById('google-logo');
+const facebookLogo = document.getElementById('facebook-logo');
+const twitterLogo = document.getElementById('twitter-logo');
+const Link = document.querySelector('a');
 
 
-function login(){
-
-   const user = document.getElementById('emailtxt').value;
-   const password = document.getElementById('senhatxt').value;
-
-   if (loginValid) {
-      window.location.href = "http://www.google.com.br";
-   }
-}
+buttonToggle.addEventListener('click', () => {
+   document.body.classList.toggle('bodyBlack');
+   button.classList.toggle('textBlack');
+   button.classList.toggle('buttonBlack');
+   footer.classList.toggle('textBlack');
+   container.classList.toggle('containerBlack');
+   googleLogo.classList.toggle('logoGoogleBlack');
+   facebookLogo.classList.toggle('logoFacebookBlack');
+   twitterLogo.classList.toggle('logoTwitterBlack');
+   Link.classList.toggle('linkBlack');
+   icon.name = icon.name === 'moon-outline' ? 'sunny-outline' : 'moon-outline';
+});

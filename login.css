@@ -1,8 +1,44 @@
+:root{
+  --cordefundo: #1767fc;
+  --cordefundo2: #ffffff;
+  --cordotexto: #000000;
+  --corgoogle: #db4a39;
+  --cortwitter: #00acee;
+  --corfacebook: #3b5998;
+  --corbotaohover: #071AE0;
+  --textofooter: #F7AB05;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #1767fc;
+  background-color: var(--cordefundo);
   font-family:Arial, Helvetica, sans-serif !important;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  flex-wrap: wrap;
+}
+
+.themeButton {
+  width: 100%;
+}
+
+.themeToggle {
+  width: auto;
+  height: auto;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.themeToggle:active {
+  background: #9c9c9c;
 }
 
 .container{
@@ -18,7 +54,7 @@ body {
   border-radius: 10px;
   text-align: center;
   padding: 10px;
-  background-color: white;
+  background-color: var(--cordefundo2);
   width: 40%;
   min-width: 300px;
   max-height: 1024px;
@@ -35,7 +71,7 @@ body {
 a {
   font-size: 14px;
   text-decoration: none;
-  color: black;
+  color: var(--cordotexto);
 }
 
 label {
@@ -56,8 +92,12 @@ label {
   margin-top: 20px
 }
 
+#login {
+  text-transform: uppercase;
+}
+
 #outros-login a{
-  color: black
+  color: var(--cordotexto);
 }
 
 #outros-login h5 {
@@ -81,40 +121,41 @@ ion-icon:active {
 */
 
 #logo-google:hover {
-  color:#db4a39;
+  color: var(--corgoogle);
   transition-duration: .2s;
 }
 
 #logo-twitter:hover {
-  color: #00acee;
+  color: var(--cortwitter);
   transition-duration: .2s;
 }
 
 #logo-facebook:hover {
-  color: #3b5998;
+  color: var(--corfacebook);
   transition-duration: .2s;
 }
 /* =FIM ICONES= */
 
 /*BOTAO LOGIN*/
 #entrar-button {
-  background-color: #1767fc;
+  background-color: var(--cordefundo);
   border: none;
   width: 100px;
   height: 30px;
   box-shadow: 5px 5px 10px rgba(78, 78, 78, 0.555);
-  color: rgb(255, 255, 255);
+  color: var(--cordefundo2);
   border-radius: 4px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 #entrar-button:active {
-  background-color: #071AE0;
+  background-color: var(--corbotaohover);
   border: none;
   width: 100px;
   height: 30px;
-  box-shadow: 5px 5px 10px rgba(78, 78, 78, 0.555);
-  color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 8px rgba(78, 78, 78, 0.555);
+  color: var(--cordefundo2);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -143,15 +184,57 @@ input[type=password]{
 /*RODAPE*/
 footer a {
   text-decoration: none;
-  color: #F7AB05;
+  color: var(--textofooter);
 }
 
 footer > p {
-  color: white;
+  color: var(--cordefundo2);
 }
 
 footer {
+  width: 100%;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
 }
 /*FIM RODAPE*/
+
+
+/* =BLACK THEME= */
+
+.bodyBlack {
+  background: #1c1c1c;
+}
+
+.textBlack {
+  color: #f5f5f5;
+}
+
+.buttonBlack {
+  background: #2e2e2e;
+  border: 1px solid #f5f5f5;
+  color: #f5f5f5;
+}
+
+.containerBlack {
+  background-color: #3d3d3d !important;
+  color: #f5f5f5;
+}
+
+
+.logoGoogleBlack {
+  color: var(--corgoogle) !important;
+}
+
+.logoTwitterBlack {
+  color: var(--cortwitter) !important;
+}
+
+.logoFacebookBlack {
+  color: var(--corfacebook) !important;
+}
+
+.linkBlack {
+  color: #f5f5f5 !important;
+}
+
+/* =FIM BLACK THEME= */
